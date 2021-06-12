@@ -26,7 +26,6 @@ public class run {
     private static boolean simulateRec(String word, int index, State s) {
         if(index==word.length()){
             return s.isAccepting;
-
         }
 
         HashSet<State> pos = s.getPossibleStates().get(Character.valueOf(word.charAt(index)));
